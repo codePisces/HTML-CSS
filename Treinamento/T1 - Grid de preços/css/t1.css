@@ -1,0 +1,65 @@
+@charset "UTF-8" ;
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+}
+p {
+    color: white;
+    font-size: 0.8em;
+}
+main{
+    display: grid;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    box-shadow: 0px 5px 20px 0 hsl(218, 22%, 67%);
+    border-radius: 10px;
+}
+
+.topo{
+    display: grid;
+    grid-column: 1 / 3;
+    background-color: white;
+    padding: 5px 30px 20px 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.7em;
+    background-color: white;
+}
+
+.topo h1 {
+    color: hsl(179, 62%, 43%);
+    background-color: white;
+}
+.topo h2 {
+    color: hsl(71, 73%, 54%);
+    background-color: white;
+    font-weight: normal;
+    font-size: 1.1em;
+}
+.topo p {
+    color: hsl(218, 22%, 67%);
+    font-weight: lighter;
+    font-size: 0.97em;
+    text-align: start;
+}
+.preco {
+    grid-area: 2 /;
+    background-color: hsl(179, 62%, 43%);
+    padding: 10px 20px 30px 30px;
+    border-bottom-left-radius: 10px;
+}
