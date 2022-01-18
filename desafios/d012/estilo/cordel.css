@@ -19,16 +19,49 @@ header{
 
 header > h1{
     padding-top: 50px;
-    /* Maneira de deixar tudo em mais */
+    /* Maneira de deixar tudo em maiusculo, mantendo a primeira letra maior*/
     font-variant: small-caps;
 }
-
-header a{
+header > p{
+    margin-top: 3px;
+    padding-bottom: 50px;
+}
+header a, footer a {
     color: white;
     text-decoration: none;
+    font-size: bolder;
 }
 
-header a:hover{
+header a:hover, footer a:hover {
     color: rgb(209, 208, 208);
     text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 40px;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.075);
+    width: 350px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 20px;
 }
