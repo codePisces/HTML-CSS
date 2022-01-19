@@ -25,7 +25,7 @@ header{
     color: white;
     text-align: center;
     font-family: var(--font2);
-    font-size: 2em;
+    font-size: 3.5em;
 }
 
 header > h1{
@@ -54,26 +54,11 @@ section {
     line-height: 2em;
     padding-left: 40px;
     font-family: var(--font3);
-    font-size: 1.7em;
+    font-size: 2.1em;
 }
 
-section.imagem > p {
-    display: inline-block;
-    padding: 25px;
-    background-color: rgba(0, 0, 0, 0.075);
-}
-
-section.imagem#im1 {
-    background-image: url();
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-section.imagem#im2 {
-    background-image: url();
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+section > p{
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -82,8 +67,33 @@ section.normal {
 }
 
 section.imagem {
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(43, 43, 43);
     color: white;
+    /* sombra para dentro da box */
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.589);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.418);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img1 {
+    background-image: url('../imagens/background001.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    
+}
+section#img2 {
+    background-image: url('../imagens/background002.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    
 }
 
 footer {
