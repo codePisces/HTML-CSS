@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+:root{
+    /* Cores */
+    --cor00: #fff;
+    --cor01: rgb(62, 3, 117);
+    --cor02: rgba(231, 218, 245, 0.932);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body{
+    background-color: var(--cor02);
+}
+
+#title, .subtitle, .post-title{
+    color: var(--cor01);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.post{
+    background-color: var(--cor00);
+    padding: 10px; 
+    margin: 10px; 
+}
