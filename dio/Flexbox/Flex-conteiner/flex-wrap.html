@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex wrap</title>
+    <style>
+        .flex-conteiner{
+            display: flex;
+            height: 150px;
+            border: 2px solid black;
+            max-width: 300px;
+        }
+
+        .item-row{
+            font-size: 24px;
+            height: 50%;
+            width: 100px;
+            min-width: 100px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .item-column{
+            font-size: 24px;
+            height: 50%;
+            min-width: 100px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .blue{
+            background-color: lightblue;
+        }
+
+        .green{
+            background-color: lightgreen;
+        }
+
+        .gray{
+            background-color: lightgray;
+        }
+        .no-wrap{
+            flex-wrap: nowrap;
+        }
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .space{
+            margin-bottom: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Modo linha</h1>
+        <h2>no wrap</h2>
+        <div class="flex-conteiner nowrap space">
+            <div class="item-row blue">1</div>
+            <div class="item-row green">2</div>
+            <div class="item-row gray">3</div>
+            <div class="item-row blue">4</div>
+        </div>
+        <h2>wrap</h2>
+        <div class="flex-conteiner wrap space">
+            <div class="item-row green">1</div>
+            <div class="item-row gray">2</div>
+            <div class="item-row blue">3</div>
+            <div class="item-row blue">4</div>
+        </div>
+        <h2>wrap-reverse</h2>
+        <div class="flex-conteiner wrap-reverse space">
+            <div class="item-row green">1</div>
+            <div class="item-row gray">2</div>
+            <div class="item-row blue">3</div>
+            <div class="item-row blue">4</div>
+        </div>
+    </div>
+    <div>
+        <h1>Modo coluna</h1>
+        <h2>no wrap</h2>
+        <div class="flex-conteiner nowrap column space">
+            <div class="item-column blue">1</div>
+            <div class="item-column green">2</div>
+            <div class="item-column gray">3</div>
+            <div class="item-column blue">4</div>
+        </div>
+        <h2>wrap</h2>
+        <div class="flex-conteiner wrap column space">
+            <div class="item-column green">1</div>
+            <div class="item-column gray">2</div>
+            <div class="item-column blue">3</div>
+            <div class="item-column blue">4</div>
+        </div>
+        <h2>wrap-reverse</h2>
+        <div class="flex-conteiner wrap-reverse column space">
+            <div class="item-column green">1</div>
+            <div class="item-column gray">2</div>
+            <div class="item-column blue">3</div>
+            <div class="item-column blue">4</div>
+        </div>
+    </div>
+    
+</body>
+</html>
